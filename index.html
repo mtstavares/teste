@@ -1,0 +1,319 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container-policial-mes {
+            width: 100%;
+            height: auto;
+            background-color: #323332;
+        }
+
+        #policial-mes {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-image: linear-gradient(to bottom, #000, #323332);
+        }
+
+        #policial-mes h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        #container2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #conteudo {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        #cards {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 8%;
+            height: 10.5em;
+            text-align: center;
+            background-color: white;
+            background-image: linear-gradient(to bottom, #323332, #000);
+            transition: 0.4s ease-in-out;
+        }
+
+        .card h3 {
+            font-weight: bold;
+            padding: 8px;
+            color: white;
+        }
+
+        .card img {
+            width: 60%;
+            height: 50%;
+            border-radius: 50%;
+        }
+
+        .card p {
+            padding: 5px;
+            color: white;
+        }
+
+        .card span {
+            font-weight: bold;
+            color: white;
+        }
+
+        .card.card:hover{
+            cursor: pointer;
+            transform: scale(1.07);
+        }
+
+        #imagem1,
+        #imagem2,
+        #sintese{
+            width: 33%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .glass img{
+            width: 55%;
+            height: 95%;
+        }
+
+        .glass{
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.586);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.674);
+            backdrop-filter: blur(3.6px);
+            -webkit-backdrop-filter: blur(3.6px);
+            border: 1px solid rgba(255, 255, 255, 0.174);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .foto-policial img{
+            width: 100%;
+            height: 80%;
+        }
+    
+        #sintese{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        #sintese h3{
+            font-size: 3em;
+        }
+
+        #sintese div{
+            width: 90%;
+            height: 75%;
+            border-radius: 15px;
+            background-color: white;
+            color:#000;
+            padding: 10px;
+        }
+
+    </style>
+
+   
+
+</head>
+
+<body>
+
+    <section id="container-policial-mes">
+        <div id="policial-mes">
+            <h1>Policial do mês - ano de 2024</h1>
+        </div>
+
+        <div id="container2">
+            <div id="conteudo">
+                <div id="imagem1">
+                    <div class="foto-policial"> <img src="imagens/pmdomes.png" alt=""></div>
+                </div>
+                <div id="imagem2">
+                    <div class="glass"><img src="imagens/23bpmm.png" alt=""></div>
+                </div>
+                <div id="sintese">
+                    <h3>Síntese</h3>
+                    <div>
+                        <p class="sintese-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum nisi sit amet mauris venenatis pretium. Suspendisse eu ipsum placerat, aliquam justo a, consequat sem. Nunc at nibh at lorem sollicitudin pretium nec et dolor. Nunc vehicula hendrerit maximus. Mauris eu vestibulum ex. Mauris ut porta nulla, sit amet rutrum nulla. Vestibulum sollicitudin placerat arcu, non rutrum risus facilisis ut. Fusce vitae neque mattis, viverra lacus eget, euismod nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas feugiat sollicitudin risus at ultrices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cards">
+                <div class="card">
+
+                    <h3 class="mes">Janeiro</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Fulano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Fevereiro</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Ciclano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Março</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Beltrano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Abril</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Fulano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Maio</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Ciclano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Junho</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Beltrano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Julho</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Fulano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Agosto</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Ciclano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Setembro</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Beltrano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Outubro</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Fulano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Novembro</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Ciclano</span></p>
+                </div>
+                <div class="card">
+
+                    <h3 class="mes">Dezembro</h3>
+
+                    <img src="imagens/pmdomes.png" alt="Imagem">
+                    <p>Sd PM <br><span>Beltrano</span></p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script defer>
+       const meses = {
+        janeiro: {
+            foto: "Aqui está a foto de janeiro",
+            sintese: "Síntese de janeiro"
+        },
+        fevereiro: {
+            foto: "Aqui está a foto de fevereiro",
+            sintese: "Síntese de fevereiro"
+        },
+    
+};
+
+
+    function atualizarInformacoesDoMes(mes) {
+        const fotoPolicial = document.querySelector(".foto-policial");
+        const sintese = document.querySelector(".sintese-texto");
+
+        if (meses.hasOwnProperty(mes)) {
+            const fotoDoMes = meses[mes].foto;
+            const sinteseDoMes = meses[mes].sintese;
+
+            
+            fotoPolicial.innerHTML = fotoDoMes;
+            sintese.innerHTML = sinteseDoMes;
+        } else {
+            // Se o mês não estiver no objeto, exibe uma mensagem de erro
+            alert(`Ainda não há informações para o mês de ${mes}.`);
+        }
+    }
+
+    // Obtém todos os elementos com a classe .card e adiciona um ouvinte de evento a cada um
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            // Obtém o texto do elemento h3 dentro do card clicado
+            const mesClicado = card.querySelector("h3").innerText.toLowerCase();
+            
+            // Chama a função para atualizar as informações do mês
+            atualizarInformacoesDoMes(mesClicado);
+        });
+});
+
+        
+
+
+
+    </script>
+</body>
+
+</html>
